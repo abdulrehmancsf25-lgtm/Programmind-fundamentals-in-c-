@@ -1,53 +1,5 @@
-/*#include<iostream>
-using namespace std ;
-int main(){
-    int n , sum = 0;
-    cout << "Enter the number " << endl ;
-    cin >> n ;
-    int sq = n * n ;
-    while(sq !=0 ){
-        int digit = sq % 10 ;
-        sum += digit ;
-        sq /= 10 ;
-    }
-    if(sum ==n )
-    cout << n << " is a neon number " << endl ;
-    else 
-    cout << n << " is not a neon number "<< endl ;
-    return 0 ;
-}*/
-/*
-#include<iostream>
-using namespace std ;
-int main(){
-    int n ;
-    cout << "Enter the number " << endl ;
-    cin >> n ;
-    if(n % 10 == 7 )
-    cout << n << " is a Buzz number " << endl ;
-    else if (n % 7 == 0 )
-       cout << n << " is a Buzz number " << endl ;
-       else
-       cout << n << " is a not Buzz number " << endl ;
-    return 0 ;
-}*/
-/*
-#include<iostream>
-using namespace std ;
-int main(){
-    char ch1 , ch2 ;
-    cin >> ch1 >> ch2 ;
-    int i = ch2 - ch1 , j = 1;
-     cout << ch1 << " ";
-    while(i ){
-             char ch3 = ch1 + j ;
-             cout << ch3 << " " ;
-     j++ ;
-     i-- ;
-    }
-    return 0 ;
-}*/
-/*
+/*Write a program to generate 5 random numbers in range 100. Find and print second highest
+number:*/
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
@@ -85,7 +37,7 @@ int main()
         
      cout << num1 << " " << num2 << " " << num3 <<" " << num4 << " " << num5 << endl ;
      cout <<  "Second maximum number is " <<  secMax ; */
-     /*
+     
        int i = 0 ,num , max = INT_MIN , secMax = -1 ;
        while( i < 5){
         num = rand() % 100 ;
@@ -102,4 +54,3 @@ int main()
        cout << "Second maximum number is " << secMax << endl ;
 return 0 ;
 } 
-*/
