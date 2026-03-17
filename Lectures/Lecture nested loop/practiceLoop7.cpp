@@ -1,3 +1,9 @@
+/* 1 2 3 4 5 SUM : 15
+1 2 3 4   SUM : 10
+1 2 3     SUM : 6 
+1 2       SUM : 3 
+1         SUM : 1
+*/
 #include <iostream>
 using namespace std;
 
