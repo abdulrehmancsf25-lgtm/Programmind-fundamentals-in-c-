@@ -1,16 +1,17 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-
 using namespace std;
 
 int main(){
-	//srand(time(0));
-	int i, j;
-	for (i = 0 ; i <= 4 ; i++){
-		for (j = 1 ; j + i <= 5 ; j++)
-			cout << j << ' ';
-		cout << '\n';
+	for (int i = 0 ; i < 5 ; i++){
+		int sum = 0 ;
+		for(int j = 1 ; i + j <= 5 ; j++){
+			cout << j << " ";
+			sum += j ;
+		}
+		for (int k = 0 ; k < i ; k++){
+           cout << "  " ;
+		}
+		cout << "SUM : " << sum << endl ;
 	}
 	return 0;
 }
