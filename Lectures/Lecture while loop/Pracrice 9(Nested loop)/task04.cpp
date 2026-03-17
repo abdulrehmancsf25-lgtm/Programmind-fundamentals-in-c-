@@ -1,3 +1,7 @@
+//Task 04: Print 5 rows of 10 random numbers. At the end of each row print 
+// maximum and minimum number:
+//Sample Run:
+//              23 37 44 25 19 18 67 87 93 12 Min: 12 Max: 93
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
