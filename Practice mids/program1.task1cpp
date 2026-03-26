@@ -27,7 +27,7 @@ int main(){
         cout << "Enter purchase price of day "<< i << " "  ;
         cin >> purch_Price2 ;
     diff = purch_Price2 - purch_Price1 ;
-      percent =  (diff * 100)/static_cast<float>(purch_Price1) ;
+      percent =  (diff * 100)/(purch_Price1 *1.0f) ;
 
     if(percent >= 0)
       cout << "Day " << i << " : +" << percent << endl ;
