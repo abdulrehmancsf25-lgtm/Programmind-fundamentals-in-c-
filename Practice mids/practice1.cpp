@@ -72,13 +72,34 @@ c -= 2;
 else
 c += 3;
 cout << a + c << '\n';*/
-
+/*
 double a = 3.0, b = 4.0, c = 1.5;
 if (a && b)
 c = c * 2;
 else
 b = b + c;
 cout << a + b + c << '\n';
+*/
 
+
+unsigned char x = 1 ;
+for(int i = 1 ; i <= 7 ; i++){
+    x <<= 1 ;
+    x |= 1 ;
+}
+cout << x * 1 << endl ;
+
+char  y = 1 ;
+y <<= 7 ;
+cout << y  << endl ;
+
+int n ;
+cin >> n ;
+if(n % 6 == 0)
+cout << "Divisible by 6 " << endl ;
+else if(n % 3 == 0)
+cout << "Divisible by 3 " << endl ;
+else
+cout << "Not divisible"<< endl ;
     return 0 ;
 }
