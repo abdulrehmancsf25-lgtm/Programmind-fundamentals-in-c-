@@ -4,6 +4,7 @@
 #include<cmath>
 using namespace std ;
 int main(){
+    /*
     srand(time(0)) ;
     int arr[10] ;
     for(int i = 0 ; i < 10 ; i++){
@@ -25,7 +26,14 @@ int main(){
      for(int i = 0 ; i < 10 ; i++){
         cout << arr[i]  << " ";
     }
-
+*/
+int x  = 511 , y = 16383 , z = 511 ;
+unsigned int temp = (x << 23 ) | ( y << 9) | z ;
+int a , b , c ;
+a = temp >> 23 ;
+b = ((temp << 9) >> 18 ) ;
+c = temp & 511 ;
+cout << a << " " << b << " " << c ;
     return 0 ;
 
 }/*
