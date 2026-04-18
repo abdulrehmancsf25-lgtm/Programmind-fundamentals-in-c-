@@ -33,7 +33,8 @@ A   B   C   D
 Z   Y   X   W
 Z  Y  X  W
 Z Y X W
-ZYXW     */
+ZYXW     
+*/
        int n ;
        cin >> n ;
        for(int i = 0 ; i < n*2 ; i++){
@@ -62,5 +63,7 @@ else {
    cout << endl ;
 
        }
+   
+  
     return 0 ;
 }

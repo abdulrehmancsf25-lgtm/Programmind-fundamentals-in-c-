@@ -95,8 +95,10 @@ cout << y  << endl ;
 
 int n ;
 cin >> n ;
-if(n % 6 == 0)
+if(n % 6 == 0){
 cout << "Divisible by 6 " << endl ;
+cout << "Divisible by 3 " << endl ;
+}
 else if(n % 3 == 0)
 cout << "Divisible by 3 " << endl ;
 else

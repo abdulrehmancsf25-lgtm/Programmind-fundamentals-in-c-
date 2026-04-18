@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std ;
 int main(){
+    /*
     int base_Salary , performance_Score ,experience ,expBonus ,performance_Bonus , tax ;
     cout << "Enter the base salary  " ;
     cin >> base_Salary ;
@@ -33,6 +34,20 @@ int main(){
    tax = 0.10 * total_Salary ;
    else tax = 0 ;
    cout << total_Salary - tax ;
-
+*/
+    int total_Extra_Snacks = 0 ;
+     for(int i = 1 ; i <= 3 ; i++){
+        int snacks ;
+        cout << "Order "  << i << " : " ;
+        cin >> snacks ;
+         int rem = snacks % 8 ;
+         if(rem > 0 ){
+         cout << "Extra snacks " << i << " : " << (8 - rem) << endl ;
+        total_Extra_Snacks += (8 - rem ) ;
+         }
+         else 
+         cout << "Extra snacks " << i << " : " << 0 << endl ;
+     }
+     cout << "Total extra snacks " << total_Extra_Snacks ;
     return 0 ;
-}
+} 
