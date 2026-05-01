@@ -1,18 +1,21 @@
 #include<iostream>
 #include<string>
 using namespace std ;
-bool check_Palindrome(int num){
-         string s = to_string(num) ;
-         for(int i = 0 , j = s.size() -1 ; i < j ; i++ ,j--){
-            if(s[i] != s[j])
-          return false ;
-         }
-         return true ;
+bool check_Palindrome(string s ,int start,  int end ){
+        if(start >= end)
+        return true ;
+    
+      if(s[start++] != s[end--])
+        return false ;
+          
+ return check_Palindrome(s , start , end) ;
 }
 int main(){
            int num ;
            cin >> num ;
-          if (check_Palindrome(num))
+            string s = to_string(num) ;
+            int size = s.size() ;
+          if (check_Palindrome(s ,0 , size-1 ))
           cout << "palindrome" << endl;
           else
           cout << "not palindrome " << endl ;
