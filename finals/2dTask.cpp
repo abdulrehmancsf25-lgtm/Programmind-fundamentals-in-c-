@@ -2,7 +2,7 @@
 #include<cstdlib>
 #include<ctime>
 using namespace std;
-void print_colum_Wise(int arr[] , int rows , int cols){
+void print(int arr[] , int rows , int cols){
                 for (int i = 0; i < rows ; i++) {
                     for (int j = 0; j < cols ; j++) {
                         cout << arr[cols * i +  j ] << " " ;
@@ -38,7 +38,7 @@ int main() {
              srand(time(0)) ;
               int arr[8][3] , x[24] ;
             input(arr[0], 24 ) ;
-            print_colum_Wise(arr[0] , 8 , 3) ;
+            print(arr[0] , 8 , 3) ;
     
             cout << "AFTER " << endl ;
             column_Wise_Copy(arr[0] , x , 24 );

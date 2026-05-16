@@ -72,5 +72,5 @@ int main(){
            print(x , 100 ) ;
            print(y , 100 ) ;
            third_Array_Calculations( z , x , y , 100 ) ;
-
+return 0 ;
 }
